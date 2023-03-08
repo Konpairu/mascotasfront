@@ -14,10 +14,11 @@ export default defineConfig({
   server: {
     proxy: {
       '^/api': {
-        target: 'https://mascotasback.onrender.com/api',
+        target: 'https://mascotasback.onrender.com/',
         changeOrigin: true,
         logLevel: 'debug',
-        pathRewrite: { '^/api': '/' }
+        pathRewrite: { '^/api': '/' },
+        secure: false, 
       }
     }
   }
