@@ -29,7 +29,7 @@ function fetchPets(){
 }
 
 function fetchOwners(){
-   fetch(`api/owners`, { method: 'GET' })
+   fetch(`https://mascotasback.onrender.com/api/owners`, { method: 'GET' })
         .then(response => response.json())
         .then(data => owners.value = data)
         .catch(error => {
