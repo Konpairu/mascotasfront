@@ -19,7 +19,7 @@ onMounted(async ()=>{
 
 function fetchPets(){
   if(selectedOwner.value){
-    fetch(`api/pets/owner/${selectedOwner.value}`, { method: 'GET' })
+    fetch(`https://mascotasback.onrender.com/api/pets/owner/${selectedOwner.value}`, { method: 'GET' })
           .then(response => response.json())
           .then(data => pets.value = data)
           .catch(error => {
@@ -50,7 +50,7 @@ function toggleShowingAddPet(){
 }
 
 async function addingOwner(owner){
-  await fetch(`api/owners`, {  method: 'POST', 
+  await fetch(`https://mascotasback.onrender.com/api/owners`, {  method: 'POST', 
                                 headers:{ 'Content-type': 'application/json'}, 
                                 body: JSON.stringify(owner)
                               }
@@ -64,7 +64,7 @@ async function addingOwner(owner){
 }
 
 async function addingPet(pet){
-  await fetch(`api/pets`, {  method: 'POST', 
+  await fetch(`https://mascotasback.onrender.com/api/pets`, {  method: 'POST', 
                                 headers:{ 'Content-type': 'application/json'}, 
                                 body: JSON.stringify({...pet, OwnerId:selectedOwner.value})
                               }
