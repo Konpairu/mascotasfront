@@ -14,7 +14,7 @@ export default defineConfig({
   server: {
     proxy: {
       '^/api': {
-        target: 'https://mascotasback.onrender.com/',
+        target: 'http://mascotasback.onrender.com/',
         changeOrigin: true,
         logLevel: 'debug',
         pathRewrite: { '^/api': '/' },
