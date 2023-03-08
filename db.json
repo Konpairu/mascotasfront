@@ -1,0 +1,55 @@
+{
+  "owners": [
+    {
+      "id": 1,
+      "name": "arnold",
+      "phone": 99999999
+    },
+    {
+      "id": 2,
+      "name": "helga",
+      "phone": 99999999
+    },
+    {
+      "id": 3,
+      "name": "yerald",
+      "phone": 99999999
+    },
+    {
+      "id": 93422,
+      "name": "123",
+      "phone": "asd"
+    },
+    {
+      "id": 66691,
+      "name": "qwe",
+      "phone": "123"
+    }
+  ],
+  "pets": [
+    {
+      "id": 1,
+      "name": "arnold",
+      "race": "chiwawa",
+      "family": "canide",
+      "catdog": true
+    },
+    {
+      "id": 2,
+      "name": "helga",
+      "race": "maltes",
+      "family": "cat",
+      "catdog": true
+    },
+    {
+      "id": 3,
+      "name": "yerald",
+      "race": "maltes",
+      "family": "reptilidae",
+      "catdog": false
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
